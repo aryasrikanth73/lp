@@ -21,7 +21,7 @@
       background-color: #fff; 
       border-radius: 10px;
       padding: 20px; 
-      /* color: white;  */
+      
       
     }
     .box-parent{
@@ -33,7 +33,7 @@
       border-radius: 10px; 
       padding: 10px 50px; 
       margin-top: 20px; 
-      /* color: #fff;  */
+      
       cursor: pointer;
       font-size: 18px; 
     }
@@ -48,6 +48,15 @@
       z-index: -1000;
       overflow: hidden;
     }
+    footer {
+      background-color: #072047;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
     @media screen and (max-width: 570px){
         img{
         width: 100%;
@@ -60,10 +69,19 @@
       }
     }
     @media screen and (min-width: 768px){
+      footer {
+        height: 10px;
+        color: #fff; 
+        padding: 20px 0; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
         .box-content{
             width: 800px;
         }
     }
+
   </style>
 </head>
 <body>
@@ -74,7 +92,7 @@
         <div class="row">
             <div class="col-md-12">
                 <center>
-                <img class="path-img" src="path.png" alt="360DigiTMG">
+                <img class="path-img" src="images/path.png" alt="360DigiTMG">
                 </center>
             </div>
         </div>
@@ -87,7 +105,7 @@
           <div class="flex-item p-3">
             
             <center>
-            <img src="poster.png" alt="360DigiTMG">
+            <img src="images/poster.png" alt="360DigiTMG">
             </center>
           </div>
           <div class="flex-item p-3">
@@ -102,7 +120,10 @@
     </div>
   </div>
 </div>
-
+</div>
+<footer>
+  Copyright &#169; 2024 360DigiTMG. All rights reserved.
+</footer>
   <!-- Bootstrap JS (Optional) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
